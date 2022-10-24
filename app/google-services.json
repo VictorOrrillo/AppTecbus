@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "968881868465",
+    "project_id": "tecbus-2022",
+    "storage_bucket": "tecbus-2022.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:968881868465:android:a57d59747db9c62e8a5c90",
+        "android_client_info": {
+          "package_name": "com.victor.orrillo.apptecbus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "968881868465-1hluopqeunqb91hjrv4v0vnvmqa4uhup.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.victor.orrillo.apptecbus",
+            "certificate_hash": "ca8682906927c1587318a88b3b8348f1ea617eea"
+          }
+        },
+        {
+          "client_id": "968881868465-rp2f7g6rjh68u1j3alik6mco06g4rra1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVNX_vWCYe0-XrLT-fKiqA9by7yqpbQ4Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "968881868465-rp2f7g6rjh68u1j3alik6mco06g4rra1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
