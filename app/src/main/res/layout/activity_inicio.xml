@@ -57,12 +57,11 @@
 
         <Button
             android:id="@+id/btn1"
-            android:text="ver rutas"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:layout_marginEnd="5dp"
-            />
+            android:layout_weight="1"
+            android:text="ver rutas" />
 
 
         <Button
