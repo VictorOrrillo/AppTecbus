@@ -33,35 +33,39 @@
         app:layout_constraintTop_toBottomOf="@+id/bus1"
         app:layout_constraintVertical_bias="0.062" />
 
-    <Button
-        android:id="@+id/btn1"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:id="@+id/lnButtons"
+        app:layout_constraintTop_toBottomOf="@id/aforo"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
-        android:layout_marginBottom="192dp"
-        android:layout_weight="1"
-        android:backgroundTint="@color/colorPrimary"
-        android:text="Ver rutas"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.175"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bus1"
-        app:layout_constraintVertical_bias="1.0" />
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
 
-    <Button
-        android:id="@+id/btn2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:backgroundTint="@color/colorPrimary"
-        android:text="Ver horarios"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.51"
-        app:layout_constraintStart_toEndOf="@+id/btn1"
-        app:layout_constraintTop_toBottomOf="@+id/bus1"
-        app:layout_constraintVertical_bias="0.311" />
+        <Button
+            android:id="@+id/btn1"
+            android:text="Ver rutas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_weight="1"
+            android:layout_marginEnd="5dp"
+            />
+
+
+        <Button
+            android:id="@+id/btn2"
+            android:text="Ver horarios"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_weight="1"
+            android:layout_marginStart="5dp"
+            />
+
+    </LinearLayout>
 
     <Button
         android:id="@+id/gcerrar"
