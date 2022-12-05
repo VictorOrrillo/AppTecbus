@@ -29,7 +29,7 @@ class InicioActivity : AppCompatActivity() {
 
         val btn: Button = findViewById(R.id.btn1)
         btn.setOnClickListener {
-            val intent: Intent = Intent(this,ListadoBusesActivity::class.java)
+            val intent: Intent = (Intent(this, ListadoBusesActivity::class.java))
             startActivity(intent)
         }
     }
