@@ -18,7 +18,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.241"
-        app:srcCompat="@drawable/bus1" />
+        app:srcCompat="@drawable/bus_tecsup2" />
 
     <TextView
         android:id="@+id/aforo"
