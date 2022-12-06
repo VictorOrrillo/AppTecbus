@@ -32,9 +32,4 @@ class ListadoBusesActivity : AppCompatActivity() {
         busListRecyclerView.adapter = busesAdapter
 
     }
-
-    fun regresarInicio(view: View) {
-        val intent = Intent(this,InicioActivity::class.java).apply { }
-        startActivity(intent)
-    }
 }
