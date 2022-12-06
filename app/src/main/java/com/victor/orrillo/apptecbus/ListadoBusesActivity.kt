@@ -1,7 +1,9 @@
 package com.victor.orrillo.apptecbus
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.victor.orrillo.apptecbus.databinding.ActivityListadoBusesBinding
@@ -25,5 +27,10 @@ class ListadoBusesActivity : AppCompatActivity() {
         val busesAdapter =BusesAdapter(buses.buses)
         busListRecyclerView.adapter = busesAdapter
 
+    }
+
+    fun regresarInicio(view: View) {
+        val intent = Intent(this,InicioActivity::class.java).apply { }
+        startActivity(intent)
     }
 }
