@@ -38,4 +38,5 @@ class InicioActivity : AppCompatActivity() {
         val intent = Intent(this,TablaHorarioActivity::class.java).apply { }
         startActivity(intent)
     }
+
 }
