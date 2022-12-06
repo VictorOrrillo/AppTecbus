@@ -33,4 +33,9 @@ class InicioActivity : AppCompatActivity() {
         val intent = Intent(this,ListadoBusesActivity::class.java).apply { }
         startActivity(intent)
     }
+
+    fun abrirHorarios(view: View) {
+        val intent = Intent(this,TablaHorarioActivity::class.java).apply { }
+        startActivity(intent)
+    }
 }
