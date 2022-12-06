@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="0">
+
+    <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="RUTAS"
+            android:padding="20dp"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="Hora de salida"
+            android:padding="20dp"
+            android:gravity="center"
+            />
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="AVIACION - J. PRADO - CAMPUS"
+            android:padding="20dp"
+            />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="7:15 a. m."
+            android:padding="20dp"
+            android:gravity="center"
+            />
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="PUENTE NUEVO - CAMPUS"
+            android:padding="20dp"
+            />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="7:20 a. m."
+            android:padding="20dp"
+            android:gravity="center"
+            />
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:layout_width="279dp"
+            android:layout_height="fill_parent"
+            android:padding="20dp"
+            android:text="CAMPUS - AV. J.PRADO - AV. LA MARINA - OV. LA PERLA" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="6:10 p. m."
+            android:padding="20dp"
+            android:gravity="center"
+            />
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:layout_width="279dp"
+            android:layout_height="fill_parent"
+            android:padding="20dp"
+            android:text="CAMPUS - PUENTE NUEVO" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="6:10 p. m."
+            android:padding="20dp"
+            android:gravity="center"
+            />
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:layout_width="279dp"
+            android:layout_height="fill_parent"
+            android:padding="20dp"
+            android:text="CAMPUS - MEGA PLAZA" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="6:10 p. m."
+            android:padding="20dp"
+            android:gravity="center"
+            />
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:layout_width="279dp"
+            android:layout_height="match_parent"
+            android:padding="20dp"
+            android:text="CAMPUS - PTE PRIMAVERA - PTE BENAVIDES - PTE ATOCONGO" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="6:10 p. m."
+            android:padding="20dp"
+            android:gravity="center"
+            />
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:layout_width="279dp"
+            android:layout_height="fill_parent"
+            android:padding="20dp"
+            android:text="CAMPUS - CHACLACAYO" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="6:10 p. m."
+            android:padding="20dp"
+            android:gravity="center"
+            />
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:layout_width="279dp"
+            android:layout_height="fill_parent"
+            android:padding="20dp"
+            android:text="CAMPUS - AV. J.PRADO - AV. LA MARINA - OV. LA PERLA" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="10:20 p. m."
+            android:padding="20dp"
+            android:gravity="center"
+            />
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:layout_width="279dp"
+            android:layout_height="fill_parent"
+            android:padding="20dp"
+            android:text="CAMPUS - PUENTE NUEVO" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="10:20 p. m."
+            android:padding="20dp"
+            android:gravity="center"
+            />
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:layout_width="279dp"
+            android:layout_height="fill_parent"
+            android:padding="20dp"
+            android:text="CAMPUS - MEGA PLAZA" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="10:20 p. m."
+            android:padding="20dp"
+            android:gravity="center"
+            />
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:layout_width="279dp"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:text="CAMPUS - PTE PRIMAVERA - PTE BENAVIDES - PTE ATOCONGO" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="10:20 p. m."
+            android:padding="20dp"
+            android:gravity="center"
+            />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="279dp"
+            android:layout_height="fill_parent"
+            android:padding="20dp"
+            android:text="CAMPUS - CHACLACAYO" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:padding="20dp"
+            android:text="10:20 p. m." />
+    </TableRow>
+</TableLayout>
