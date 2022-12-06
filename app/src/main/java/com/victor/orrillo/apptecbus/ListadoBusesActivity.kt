@@ -16,7 +16,11 @@ class ListadoBusesActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_listado_buses)
+
+        binding = ActivityListadoBusesBinding.inflate(layoutInflater)
+        val view = binding.root
+
+        setContentView(view)
         setRecyclerView()
     }
 
