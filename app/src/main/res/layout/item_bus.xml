@@ -40,8 +40,8 @@
             android:layout_below="@+id/rutas_text"
             android:layout_marginBottom="8dp"
             android:layout_toEndOf="@+id/picture_image"
-            android:text="Disponible"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            android:textColor="@color/colorPrimary"/>
 
 
 
