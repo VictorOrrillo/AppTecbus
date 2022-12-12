@@ -1,5 +1,6 @@
 package com.victor.orrillo.apptecbus
 
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -8,9 +9,10 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.victor.orrillo.apptecbus.databinding.ItemBusBinding
+import com.victor.orrillo.apptecbus.services.BusDTO
 
 class BusesAdapter(
-    private val listbuses : List <Bus>,
+    var listbuses: List<BusDTO>
 ) : RecyclerView.Adapter<BusesAdapter.BusViewHolder>() {
 
     class BusViewHolder(
@@ -28,21 +30,22 @@ class BusesAdapter(
     }
 
     override fun onBindViewHolder(holder: BusViewHolder, position: Int) {
-        val bus : Bus = listbuses[position]
+        val bus : BusDTO = listbuses[position]
 
         val context = holder.itemView.context
 
         val idRes = context.resources.getIdentifier(bus.picture, "drawable", context.packageName)
 
-        holder.rutas.text = bus.rutas
+        holder.rutas.text = bus.ruta
         holder.picture.setImageResource(idRes)
         holder.itemView.setOnClickListener {
-            Toast.makeText(context, " ${bus.rutas} ", Toast.LENGTH_SHORT).show()
+            Toast.makeText(context, " ${bus.ruta} ", Toast.LENGTH_SHORT).show()
         }
         holder.additionalText.visibility = View.VISIBLE
     }
 
     override fun getItemCount(): Int {
+        Log.i("SIZE ", listbuses.size.toString())
         return listbuses.size
     }
 

@@ -1,21 +1,30 @@
 package com.victor.orrillo.apptecbus
 
-class BusRepository(
-    val buses : MutableList<Bus> = ArrayList()
-) {
+import android.util.Log
+import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.ViewModel
+import com.victor.orrillo.apptecbus.services.BusDTO
+import com.victor.orrillo.apptecbus.services.RutasService
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
+
+class BusRepository(): ViewModel() {
+    val busesLive = MutableLiveData<List<BusDTO>>()
+
     init {
         getDataBuses()
     }
 
-    fun getDataBuses() : List<Bus>{
-        buses.add(Bus(1, "AVIACION - J.PRADO - CAMPUS", "bus_tecsup1"));
-        buses.add(Bus(2, "PUENTE NUEVO - CAMPUS", "bus_tecsup1"));
-        buses.add(Bus(3, "CAMPUS - AV. J.PRADO - AV. LA MARINA - OV. LA PERLA", "bus_tecsup2"));
-        buses.add(Bus(4, "CAMPUS - PUENTE NUEVO", "bus_tecsup2"));
-        buses.add(Bus(5, "CAMPUS - MEGA PLAZA", "bus_tecsup2"));
-        buses.add(Bus(6, "CAMPUS - PTE. PRIMAVERA - PTE. BENAVIDES - PTE ATOCONGO", "bus_tecsup2"));
-        buses.add(Bus(7, "CAMPUS - CHACLACAYO", "bus_tecsup2"));
+    fun getDataBuses()  {
+        CoroutineScope(Dispatchers.IO).launch {
+            val call = RutasService.build().getAllRutas()
+            if (call.isSuccessful) {
+                call.body()?.let {
+                    busesLive.postValue(it)
+                }
+            }
+        }
 
-        return buses;
     }
 }
